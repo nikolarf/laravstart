@@ -12,4 +12,8 @@ Route::get('invoice', function(){
     return view('invoice');
 });
 
+Route::get('about', function(){
+	return view('about');
+});
+
 Route::get('{path}',"HomeController@index")->where( 'path', '([A-z\d-\/_.]+)?' );
